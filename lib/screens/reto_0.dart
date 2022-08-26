@@ -13,16 +13,12 @@ class Reto0Screen extends StatelessWidget {
 
       if (divThree == 0 && divFive == 0) {
         fizzbuzz[i] = 'fizzbuzz';
-        print(fizzbuzz[i]);
       } else if (divThree == 0) {
         fizzbuzz[i] = 'fizz';
-        print(fizzbuzz[i]);
       } else if (divFive == 0) {
         fizzbuzz[i] = 'buzz';
-        print(fizzbuzz[i]);
       } else {
         fizzbuzz[i] = '$i';
-        print(fizzbuzz[i]);
       }
     }
 
@@ -32,8 +28,14 @@ class Reto0Screen extends StatelessWidget {
           child: Text("El Famoso 'Fizz Buzz'"),
         ),
       ),
-      body: const Center(
-        child: Text('Reto0Screen'),
+      body: ListView.separated(
+        itemBuilder: (context, index) => ListTile(
+          title: Text(
+            fizzbuzz[index].toString(),
+          ),
+        ),
+        separatorBuilder: (_, __) => const Divider(),
+        itemCount: fizzbuzz.length,
       ),
     );
   }
