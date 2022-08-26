@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reto_0/models/models.dart';
-import 'package:reto_0/screens/screens.dart';
+import 'package:weekly_challenge_2022_flutter/models/models.dart';
+import 'package:weekly_challenge_2022_flutter/screens/screens.dart';
 
 class AppRoutes {
   static const initialRoute = 'home';

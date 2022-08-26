@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reto_0/router/app_routes.dart';
+import 'package:weekly_challenge_2022_flutter/router/app_routes.dart';
 
 void main() => runApp(const MyApp());
 

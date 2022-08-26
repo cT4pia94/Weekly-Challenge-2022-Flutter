@@ -1,1 +1,1 @@
-export 'package:reto_0/models/screen_options.dart';
+export 'package:weekly_challenge_2022_flutter/models/screen_options.dart';
