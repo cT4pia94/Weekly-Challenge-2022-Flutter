@@ -23,6 +23,9 @@ class HomeScreen extends StatelessWidget {
             Icons.arrow_right,
             color: AppTheme.primary,
           ),
+          onTap: () {
+            Navigator.pushNamed(context, screenOptions[index].route);
+          },
         ),
         separatorBuilder: (_, __) => const Divider(),
         itemCount: screenOptions.length,
