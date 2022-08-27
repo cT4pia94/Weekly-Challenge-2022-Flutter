@@ -8,8 +8,13 @@ class AppRoutes {
   static final screenOptions = <ScreenOption>[
     ScreenOption(
       route: 'reto0',
-      name: 'Reto 0',
+      name: 'Reto #0: El Famoso FizzBuzz',
       screen: const Reto0Screen(),
+    ),
+    ScreenOption(
+      route: 'reto1',
+      name: 'Reto #1: ¿Es un Anagrama?',
+      screen: const Reto1Screen(),
     )
   ];
 
