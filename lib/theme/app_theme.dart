@@ -41,5 +41,14 @@ class AppTheme {
         ),
       ),
     ),
+
+    // ElevatedButton Theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        primary: primary,
+        shape: const StadiumBorder(),
+        elevation: 2,
+      ),
+    ),
   );
 }
