@@ -12,7 +12,7 @@ class CustomInput extends StatelessWidget {
     this.prefixIcon,
     this.keyboardType,
     this.obscureText = false,
-    required this.fromProperty,
+    required this.formProperty,
     required this.formValues,
   }) : super(key: key);
 
@@ -26,7 +26,7 @@ class CustomInput extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool obscureText;
 
-  final String fromProperty;
+  final String formProperty;
   final Map<String, String> formValues;
 
   @override
@@ -37,7 +37,7 @@ class CustomInput extends StatelessWidget {
       textCapitalization: TextCapitalization.words,
       obscureText: obscureText,
       keyboardType: keyboardType,
-      onChanged: (value) => formValues[fromProperty] = value,
+      onChanged: (value) => formValues[formProperty] = value,
       validator: (value) {
         if (value == null) return 'Campo requerido';
       },
