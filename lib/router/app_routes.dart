@@ -15,6 +15,11 @@ class AppRoutes {
       route: 'reto1',
       name: 'Reto #1: ¿Es un Anagrama?',
       screen: const Reto1Screen(),
+    ),
+    ScreenOption(
+      route: 'reto2',
+      name: 'Reto #2: La Sucesión de Fibonacci',
+      screen: const Reto2Screen(),
     )
   ];
 
