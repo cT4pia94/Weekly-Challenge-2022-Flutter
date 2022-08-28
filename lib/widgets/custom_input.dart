@@ -40,6 +40,7 @@ class CustomInput extends StatelessWidget {
       onChanged: (value) => formValues[formProperty] = value,
       validator: (value) {
         if (value == null) return 'Campo requerido';
+        return value.length < 2 ? 'Campo requerido' : null;
       },
       autovalidateMode: AutovalidateMode.onUserInteraction,
       decoration: InputDecoration(
